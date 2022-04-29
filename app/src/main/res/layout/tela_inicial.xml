@@ -43,5 +43,6 @@
         android:layout_width="130dp"
         android:layout_height="150dp"
         android:layout_gravity="center"
+        android:onClick="postoProximo"
         app:srcCompat="@drawable/maps" />
 </LinearLayout>

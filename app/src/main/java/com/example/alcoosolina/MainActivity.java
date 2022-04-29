@@ -18,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    //public void postoProximo(View v){
-        //setContentView(R.layout.);
-    //}
+    public void postoProximo(View v){
+        setContentView(R.layout.mapa);
+    }
 
 }
