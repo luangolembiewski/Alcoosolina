@@ -1,7 +1,7 @@
 package com.example.alcoosolina;
-
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
@@ -13,13 +13,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.tela_inicial);
     }
 
-    public void calculoMedia(View v){
-        setContentView(R.layout.calculo_media);
+    public void calculoMedia(View view){
+        Intent calculoM = new Intent(this, CalcMedia.class);
+        startActivity(calculoM);
     }
 
 
     public void postoProximo(View v){
-        setContentView(R.layout.mapa);
+
     }
 
 }

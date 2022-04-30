@@ -6,81 +6,94 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     android:gravity="center_horizontal"
+    tools:context=".CalcMedia"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="Calcular Média"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="TextView"
-        android:textColor="@color/black" />
+        android:text="Litros"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/textView5"
+    <EditText
+        android:id="@+id/litros"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@color/white"
-        android:text="TextView" />
+        android:textSize="16sp" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:gravity="center"
-        android:text="Km Percorrido"
-        android:textColor="@color/black" />
+        android:text="Km Percorridos"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
-    <TextView
-        android:id="@+id/textView7"
+    <EditText
+        android:id="@+id/kmPercorridos"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@color/white"
-        android:text="TextView" />
+        android:textSize="16sp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="79dp">
 
         <RadioButton
-            android:id="@+id/radioButton"
-            android:layout_width="87dp"
+            android:id="@+id/rdGasolina"
+            android:layout_width="95dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="90dp"
+            android:layout_marginEnd="90dp"
             android:text="Gasolina"
-            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteY="15dp" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/rdAlcool"
             android:layout_width="83dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="90dp"
+            android:layout_marginStart="90dp"
             android:text="Álcool"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteY="15dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="match_parent"
+        android:id="@+id/calcular_media"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="calcularMedia"
-        android:text="Calcular Média" />
+        android:text="Calcular Média"
+        android:textSize="16sp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="105dp">
+        android:layout_height="105dp"
+        android:layout_marginTop="10dp">
 
         <TextView
             android:id="@+id/textView12"
@@ -88,33 +101,43 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="90dp"
             android:text="X"
+            android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
-            tools:layout_editor_absoluteY="58dp" />
+            tools:layout_editor_absoluteY="58dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/textView13"
+            android:id="@+id/resGasolina"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
             android:background="@color/white"
+            android:textSize="16sp"
             app:layout_constraintEnd_toStartOf="@+id/textView12"
-            tools:layout_editor_absoluteY="58dp" />
+            tools:layout_editor_absoluteY="58dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
             android:text="X"
-            app:layout_constraintStart_toEndOf="@+id/textView9"
-            tools:layout_editor_absoluteY="58dp" />
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/resAlcool"
+            tools:layout_editor_absoluteY="58dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
-            android:id="@+id/textView9"
+            android:id="@+id/resAlcool"
             android:layout_width="80dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="90dp"
             android:background="@color/white"
+            android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="58dp" />
+            tools:layout_editor_absoluteY="58dp"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/textView10"
@@ -122,9 +145,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="90dp"
             android:layout_marginBottom="20dp"
-            android:text="TextView"
+            android:text="Média Álcool"
             android:textColor="@color/black"
-            app:layout_constraintBottom_toTopOf="@+id/textView9"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/resAlcool"
             app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
@@ -133,9 +157,10 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="90dp"
             android:layout_marginBottom="20dp"
-            android:text="TextView"
+            android:text="Média Gasolina"
             android:textColor="@color/black"
-            app:layout_constraintBottom_toTopOf="@+id/textView13"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/resGasolina"
             app:layout_constraintEnd_toEndOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -144,6 +169,7 @@
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="calcularCusto"
-        android:text="Custo Beneficio" />
+        android:onClick="trocar"
+        android:text="Custo Beneficio"
+        android:textSize="16sp" />
 </LinearLayout>

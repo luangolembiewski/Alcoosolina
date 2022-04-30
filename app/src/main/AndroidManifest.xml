@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Alcoosolina">
         <activity
+            android:name=".CalcCustoBeneficio"
+            android:exported="false" />
+        <activity
+            android:name=".CalcMedia"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
