@@ -23,7 +23,8 @@
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="Calcular Média"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -41,7 +42,8 @@
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="Encontrar Postos"
-        android:textColor="@color/black" />
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <ImageView
         android:id="@+id/imageView4"

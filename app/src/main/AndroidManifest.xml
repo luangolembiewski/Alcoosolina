@@ -10,14 +10,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Alcoosolina">
         <activity
-            android:name=".CalcCustoBeneficio"
+            android:name=".Mapa"
             android:exported="false" />
+        <activity
+            android:name=".CalcCustoBeneficio"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:parentActivityName=".CalcMedia"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".CalcMedia"
-            android:exported="false" />
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,5 +35,7 @@
             </intent-filter>
         </activity>
     </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
 </manifest>

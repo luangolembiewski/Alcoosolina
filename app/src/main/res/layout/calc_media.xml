@@ -17,35 +17,17 @@
         android:gravity="center"
         android:text="Calcular Média"
         android:textColor="@color/black"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:text="Litros"
-        android:textColor="@color/black"
-        android:textSize="16sp" />
-
-    <EditText
-        android:id="@+id/litros"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:background="@color/white"
-        android:textSize="16sp" />
+        android:textSize="24sp" />
 
     <TextView
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:gravity="center"
         android:text="Km Percorridos"
         android:textColor="@color/black"
-        android:textSize="16sp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/kmPercorridos"
@@ -53,7 +35,25 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@color/white"
-        android:textSize="16sp" />
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Litros"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/litros"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:textSize="20sp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -61,22 +61,22 @@
 
         <RadioButton
             android:id="@+id/rdGasolina"
-            android:layout_width="95dp"
+            android:layout_width="111dp"
             android:layout_height="wrap_content"
             android:layout_marginEnd="90dp"
             android:text="Gasolina"
-            android:textSize="16sp"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteY="15dp" />
 
         <RadioButton
             android:id="@+id/rdAlcool"
-            android:layout_width="83dp"
+            android:layout_width="90dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="90dp"
             android:text="Álcool"
-            android:textSize="16sp"
+            android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteY="15dp" />
@@ -88,7 +88,7 @@
         android:layout_height="wrap_content"
         android:onClick="calcularMedia"
         android:text="Calcular Média"
-        android:textSize="16sp" />
+        android:textSize="20sp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -96,15 +96,16 @@
         android:layout_marginTop="10dp">
 
         <TextView
-            android:id="@+id/textView12"
+            android:id="@+id/lpGa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="90dp"
+            android:onClick="limparGasolina"
             android:text="X"
-            android:textSize="16sp"
+            android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
-            tools:layout_editor_absoluteY="58dp"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="58dp" />
 
         <TextView
             android:id="@+id/resGasolina"
@@ -112,21 +113,22 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="2dp"
             android:background="@color/white"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/textView12"
-            tools:layout_editor_absoluteY="58dp"
-            tools:ignore="MissingConstraints" />
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/lpGa"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="58dp" />
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/lpAl"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="2dp"
+            android:onClick="limparAlcool"
             android:text="X"
-            android:textSize="16sp"
+            android:textSize="20sp"
             app:layout_constraintStart_toEndOf="@+id/resAlcool"
-            tools:layout_editor_absoluteY="58dp"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="58dp" />
 
         <TextView
             android:id="@+id/resAlcool"
@@ -134,20 +136,20 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="90dp"
             android:background="@color/white"
-            android:textSize="16sp"
+            android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="58dp"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="58dp" />
 
         <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="90dp"
+            android:layout_marginStart="70dp"
             android:layout_marginBottom="20dp"
             android:text="Média Álcool"
             android:textColor="@color/black"
-            android:textSize="16sp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/resAlcool"
             app:layout_constraintStart_toStartOf="parent" />
 
@@ -155,13 +157,14 @@
             android:id="@+id/textView11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="90dp"
+            android:layout_marginEnd="70dp"
             android:layout_marginBottom="20dp"
             android:text="Média Gasolina"
             android:textColor="@color/black"
-            android:textSize="16sp"
+            android:textSize="20sp"
             app:layout_constraintBottom_toTopOf="@+id/resGasolina"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView10" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -171,5 +174,5 @@
         android:layout_height="wrap_content"
         android:onClick="trocar"
         android:text="Custo Beneficio"
-        android:textSize="16sp" />
+        android:textSize="20sp" />
 </LinearLayout>
