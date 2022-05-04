@@ -91,13 +91,13 @@ public class CalcMedia extends AppCompatActivity {
         TextView resGasolina = (TextView) findViewById(R.id.resGasolina);
         TextView resAlcool =(TextView) findViewById(R.id.resAlcool);
         try {
-            Double valResGasolina = Double.parseDouble(String.valueOf(resAlcool.getText()));
+            Double valResGasolina = Double.parseDouble(String.valueOf(resGasolina.getText()));
             Double valResAlcool = Double.parseDouble(String.valueOf(resAlcool.getText()));
 
             if(!valResGasolina.isNaN() && !valResAlcool.isNaN()){
                 Intent intent = new Intent(CalcMedia.this, CalcCustoBeneficio.class);
                 intent.putExtra("gasolina", valResGasolina);
-                intent.putExtra("alcool", valResGasolina);
+                intent.putExtra("alcool", valResAlcool);
                 startActivity(intent);
             }
         }catch (Exception ex){
