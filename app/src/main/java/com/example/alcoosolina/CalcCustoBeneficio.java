@@ -64,11 +64,15 @@ public class CalcCustoBeneficio extends AppCompatActivity {
 
     public void limparPrecoAlcool(View view){
         EditText precoAlcool = (EditText) findViewById(R.id.precoAlcool);
+        TextView resCusto = (TextView) findViewById(R.id.resCusto);
         precoAlcool.setText(String.valueOf(""));
+        resCusto.setText("");
     }
     public void limparPrecoGasolina(View view){
         EditText precoGasolina =(EditText) findViewById(R.id.precoGasolina);
+        TextView resCusto = (TextView) findViewById(R.id.resCusto);
         precoGasolina.setText(String.valueOf(""));
+        resCusto.setText("");
     }
     public void voltarInicio(View view){
         Intent intent = new Intent(getApplicationContext(), MainActivity.class);

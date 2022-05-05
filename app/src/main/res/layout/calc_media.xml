@@ -35,6 +35,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@color/white"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
         android:textSize="20sp" />
 
     <TextView
@@ -53,6 +55,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:background="@color/white"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
         android:textSize="20sp" />
 
     <androidx.constraintlayout.widget.ConstraintLayout

@@ -47,6 +47,7 @@ public class CalcMedia extends AppCompatActivity {
             }else{
                 if(valKmPercorridos > valLitros) {
                     Double kmL = valKmPercorridos/valLitros;
+                    kmL = (Double) (Math.round(kmL*100.0)/100.0);
                     if(rdGasolina.isChecked()){
                         resGasolina.setText(String.valueOf(kmL));
                         rdGasolina.setChecked(false);
