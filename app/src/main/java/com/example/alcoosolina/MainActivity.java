@@ -21,7 +21,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void postoProximo(View v){
-
+        Intent mapa = new Intent(this, Mapa.class);
+        startActivity(mapa);
     }
 
 
