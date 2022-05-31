@@ -17,13 +17,17 @@
         android:theme="@style/Theme.Alcoosolina" >
 
         <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBAXa52xo9X8VITCB90mAAcTde7geoMupU" />
 
         <activity
             android:name=".Mapa"
             android:exported="false"
-            android:label="@string/title_activity_mapa" />
+            android:label="@string/title_activity_mapa"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".CalcCustoBeneficio"
             android:exported="false"
