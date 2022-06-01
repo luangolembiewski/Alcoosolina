@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Alcoosolina</string>
     <string name="title_activity_mapa">Mapa</string>
+    <string name="api_key">AIzaSyBAXa52xo9X8VITCB90mAAcTde7geoMupU</string>
 </resources>
